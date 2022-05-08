@@ -1,6 +1,5 @@
 import Copyright from "./Copyright";
 import Links from "./Links";
-import FundoMobile from "./MobileBackground";
 import Suggestions from "./Suggestions";
 
 export default function Sidebar() {
@@ -16,7 +15,6 @@ export default function Sidebar() {
             <Suggestions />
             <Links />
             <Copyright />
-            <FundoMobile />
         </div>
     );
 }

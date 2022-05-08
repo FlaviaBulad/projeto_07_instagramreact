@@ -1,4 +1,4 @@
-export default function FundoMobile(){
+export default function MobileBackground(){
     return(
         <div class="fundo-mobile">
         <ion-icon name="home"></ion-icon>
