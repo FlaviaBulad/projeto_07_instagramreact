@@ -23,26 +23,30 @@ export default function Suggestions() {
             username: "bad.vibes.memes",
             image: "bad.vibes.memes.svg",
             reason: "Segue você",
+        }
         },
-
+        {
         user: {
             username: "chibirdart",
             image: "chibirdart.svg",
             reason: "Segue você",
+        }
         },
-
+        {
         user: {
             username: "razoesparaacreditar",
             image: "razoesparaacreditar.svg",
             reason: "Novo no Instagram",
+        }
         },
-
+        {
         user: {
             username: "adorable_animals",
             image: "adorable_animals.svg",
             reason: "Segue você",
+        }
         },
-
+        {
         user: {
             username: "smallcutecats",
             image: "smallcutecats.svg",

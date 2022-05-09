@@ -50,8 +50,9 @@ export default function Posts() {
         whoLiked: "respondeai",
         whoLikedImage: "respondeai.svg",
         likesCounter: "101.523"
+      }
       },
-
+      {
       user: {
         username: "barked",
         image: "barked.svg",
