@@ -1,70 +1,64 @@
-export default function Suggestions(){
-    return(
+function Suggestion(props) {
+    return (
+        <div class="sugestao">
+            <div class="usuario">
+                <img src={`../assets/img/${props.user.image}`} />
+                <div class="texto">
+                    <div class="nome">{props.user.username}</div>
+                    <div class="razao">{props.user.reason}</div>
+                </div>
+            </div>
+
+            <div class="seguir">Seguir</div>
+        </div>
+    );
+
+}
+
+export default function Suggestions() {
+
+    const suggestion = [
+        {
+        user: {
+            username: "bad.vibes.memes",
+            image: "bad.vibes.memes.svg",
+            reason: "Segue você",
+        },
+
+        user: {
+            username: "chibirdart",
+            image: "chibirdart.svg",
+            reason: "Segue você",
+        },
+
+        user: {
+            username: "razoesparaacreditar",
+            image: "razoesparaacreditar.svg",
+            reason: "Novo no Instagram",
+        },
+
+        user: {
+            username: "adorable_animals",
+            image: "adorable_animals.svg",
+            reason: "Segue você",
+        },
+
+        user: {
+            username: "smallcutecats",
+            image: "smallcutecats.svg",
+            reason: "Segue você",
+        },
+    }
+];
+
+    return (
         <div class="sugestoes">
-        <div class="titulo">
-            Sugestões para você
-            <div>Ver tudo</div>
-        </div>
-    
-        <div class="sugestao">
-            <div class="usuario">
-            <img src="../assets/img/bad.vibes.memes.svg" />
-            <div class="texto">
-                <div class="nome">bad.vibes.memes</div>
-                <div class="razao">Segue você</div>
+            <div class="titulo">
+                Sugestões para você
+                <div>Ver tudo</div>
             </div>
-            </div>
-    
-            <div class="seguir">Seguir</div>
-        </div>
-    
-        <div class="sugestao">
-            <div class="usuario">
-            <img src="../assets/img/chibirdart.svg" />
-            <div class="texto">
-                <div class="nome">chibirdart</div>
-                <div class="razao">Segue você</div>
-            </div>
-            </div>
-    
-            <div class="seguir">Seguir</div>
-        </div>
-    
-        <div class="sugestao">
-            <div class="usuario">
-            <img src="../assets/img/razoesparaacreditar.svg" />
-            <div class="texto">
-                <div class="nome">razoesparaacreditar</div>
-                <div class="razao">Novo no Instagram</div>
-            </div>
-            </div>
-    
-            <div class="seguir">Seguir</div>
-        </div>
-    
-        <div class="sugestao">
-            <div class="usuario">
-            <img src="../assets/img/adorable_animals.svg" />
-            <div class="texto">
-                <div class="nome">adorable_animals</div>
-                <div class="razao">Segue você</div>
-            </div>
-            </div>
-    
-            <div class="seguir">Seguir</div>
-        </div>
-    
-        <div class="sugestao">
-            <div class="usuario">
-            <img src="../assets/img/smallcutecats.svg" />
-            <div class="texto">
-                <div class="nome">smallcutecats</div>
-                <div class="razao">Segue você</div>
-            </div>
-            </div>
-    
-            <div class="seguir">Seguir</div>
-        </div>
+            {suggestion.map((suggestion)=> <Suggestion user={suggestion.user} />)}
         </div>
     );
 }
+
